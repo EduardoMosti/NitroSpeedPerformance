@@ -36,17 +36,16 @@ nav li{
 /*Estilização da sessão SOBRE NÓS*/
 .quemsomos{
     margin: 0;
-    background: linear-gradient(#7c7c7c, #b3b3b3, #ffffff);
     width: 100%;
+    background: linear-gradient(#bdbabd,#ADAAAB,#9C999A);
+    font-size: 22px;
+    margin-top: 0;
 }
 .img_quemsomos{
     width: 28%;
-    float: inline-start;
+    float: left;
     margin-right: 15px;
-}
-.titulo_quemsomos{
-    clear: left;
-    text-align: center;
+    margin-left: 15%;
 }
 .textoQuemSomos{
     margin: 0;
@@ -54,18 +53,52 @@ nav li{
     font-size: 22px;
     margin-left: 15%;
 }
-
+.titulo_quemsomos{
+    clear: left;
+    text-align: center;
+}
 /*Estilização da sessão NOSSA LOJA*/
 .nossaloja{
-    background: linear-gradient(#ffffff,#b2b2b2,#7a7a7a);
     margin: 0;
+    background: linear-gradient(#bdbabd,#848081,#737071);
     text-align: justify;
     width: 100%;
     font-size: 22px;
 }
 .titulo_nossaloja{
     text-align: center;
+    margin: 0;
 }
 .mapa{
     margin-left: 15%;
+}
+/*Estilização da sessão NOSSOS PRODUTOS*/
+.nossosprodutos{
+    margin: 10px;
+    background: linear-gradient(#6F6C6D,#676465,#5F5C5D);
+    text-align: justify;
+    width: 100%;
+    font-size: 22px;
+}
+.div_nossosprodutos{
+    width: 70%;
+    margin-left: 40%;
+}
+.titulo_nossosprodutos{
+    text-align: center;
+    margin: 0;
+}
+.lista_nossosprodutos{
+    line-height: 4;
+    display: inline-block;
+    list-style: none;
+}
+.lista_nossosprodutos li:before{
+    content:"💨"
+}
+.img_nossosprodutos{
+    width: 235px;
+}
+.video{
+    padding: 0 0 0 20%;
 }
