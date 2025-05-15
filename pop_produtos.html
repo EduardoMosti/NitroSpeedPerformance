@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>NitroSpeed Performance Garage</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1 id="nome-produto">TITULO</h1>
+                <img id="imagem-produto" src=""/>
+                <p id="descricao-produto">DESCRICAO</p>
+
+                <!--Captura as informações do Produtos-->
+                <script>
+                    function getParametro(dado){
+                        const urlPrams = new URLSearchParams(window.location.search);
+                        return urlPrams.get(dado);    
+                    }
+
+                    //preenche na página as informações recebidas
+                    document.getElementById("nome-produto").textContent = getParametro ("nome");
+                    document.getElementById("imagem-produto").src = getParametro ("imagem");
+                    document.getElementById("descricao-produto").textContent = getParametro ("descricao");
+                </script>
+            </div>
+        </main>
+    </body>
+</html>
