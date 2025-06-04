@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contato - NitroSpeed Performance Garage</title>
+    <link rel="stylesheet" href="css/estilos_contato.css">
+</head>
+<body>
+    <!-- Cabeçalho padrão -->
+    <div class="divHeader">
+        <img src="img/Logo.png" class="logo" alt="NitroSpeed Logo" />
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><strong>HOME</strong></a></li>
+                <li><a href="produtos.html"><strong>PRODUTOS</strong></a></li>
+                <li><a href="contato.html"><strong>CONTATO</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Formulário -->
+    <main>
+        <h1 class="titulo_contato">Entre em Contato</h1>
+        <p class="texto_intro">Preencha os dados abaixo para nos enviar sua dúvida, sugestão ou feedback:</p>
+        <!-- DIV de retorno oculta -->
+        <div id="formRetorno" class="mensagem-oculta"></div>
+        <p id="textoRetorno" class="texto-contato"></p>
+        <form id="formContato">
+            <fieldset>
+                <legend>Formulário de Contato</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+
+                <label>Como prefere ser contatado?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" id="contato_email" name="preferencia" value="email">
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" id="contato_telefone" name="preferencia" value="telefone">
+                        Telefone
+                    </label>
+                </div>
+
+                <label for="motivo">Motivo do Contato:</label>
+                <select id="motivo" name="motivo">
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select>
+
+                <label>Receber promoções?</label>
+                <input type="checkbox" id="promocoes" name="promocoes">
+                <label for="promocoes">Sim, desejo receber novidades</label>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" cols="30" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <img src="img/Logo.png" alt="Logo NitroSpeed" class="logo_footer">
+        <p>&copy; 2025 NitroSpeed Performance Garage</p>
+        <p><a href="mailto:contato@nitrospeed.com">contato@nitrospeed.com</a></p>
+        <p>Vendas: <a href="https://wa.me/5511991929394"><i class="fa fa-whatsapp"></i> (11) 99192-9394</a></p>
+        <p><a href="https://instagram.com/nitrospeedperformance"><i class="fa fa-instagram"></i> @NitroSpeed_Performance_Garage</a></p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>

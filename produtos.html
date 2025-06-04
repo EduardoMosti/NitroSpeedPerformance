@@ -1,64 +1,119 @@
-<html>
-    <head>
-        <link href="css/estilos_produtos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <meta charset="UTF-8"/>
-        <title>PRODUTOS</title>
-        <script src="alerta.js"></script>
-    </head>
-    <body>
-        <header>
-                <!--Logotipo-->
-                <img src="img/Logo.png" titlte="NitroSpeed Performance Garage" class="logo" />
-               
-                <!--MENU-->
-                <nav>
-                    <ul>
-                        <li><strong><a href="index.html">HOME</a></strong></li>
-                        <li><strong><a href="produtos.html">PRODUTOS</a></strong></li>
-                        <li><strong><a href="contato.html">CONTATO</a></strong></li>
-                    </ul>
-                    <script type = "text/javascript">
-                        document.write(dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear())
-                        
-                        //POP-UP de detalhes de produtos
-                        function abrirDetalhes(nome, imagem, descricao){
-                            const url = `pop_produtos.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;
-                            window.open(url, "_blank", "width=800,hedith=700");
-                        }
-                    </script>
-                </nav>
-        </header>
-       
-        <div class="container">
-            <script>
-                descTurbina = "Hx40 eixo 64mm, rotor 60mm Billet Conjunto central novo Tampa Holset Original - Recon Caracol quente a escolher: AR 48/63 Mono AR 48/58/70/84/100/106 Pulsativo Acompanha jogo de juntas, prisioneiros e porcas Balanceamento computadorizado de alta rotação. Empresa especializada no ramo de turbinas. Sabino Turbo 3 meses de garantia DEVIDO AOS VÁRIOS TIPOS DE CONFIGURAÇÃO O TURBO SERA ENVIADO DE 2 A 3 DIAS APÓS A COMPRA"
-            </script>
-            <div class="card" onclick="abrirDetalhes('Turbina HX40','img/Turbina HX40.png', descTurbina)">
-                <img src="img/Turbina HX40.png" alt="Produto 1">
-                <h2>Turbina HX40</h2>
-                <p>Turbina Holset HX Aplicação automotiva - (Alta Performance).
-                   Hx40 eixo 64mm, rotor 60mm Billet</p>
-                <span class="preco">R$ 3540,00 à vista</span>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos | NitroSpeed Performance Garage</title>
+
+    <!-- CSS -->
+    <link href="css/estilos_produtos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+       <div class="divHeader">
+        <!-- Logotipo -->
+        <img src="img/Logo.png" title="NitroSpeed Performance Garage" class="logo" />
+
+        <!-- Botão Menu Mobile -->
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Menu -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><strong>HOME</strong></a></li>
+                <li><a href="produtos.html"><strong>PRODUTOS</strong></a></li>
+                <li><a href="contato.html"><strong>CONTATO</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="catalogo">
+            <h2 class="titulo_produtos">NOSSO CATÁLOGO</h2>
+            <div class="produtos_grid">
+                <!-- Produto 1 -->
+                <div class="produto_card">
+                    <img src="img/Pneu Hossier 29X10.5r15.png" alt="Pneu Hoosier" class="produto_img" />
+                    <h3>Pneu Hoosier 29X10.5 R15</h3>
+                    <button class="btn_abrir" data-target="popup1">Ver Detalhes</button>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto_card">
+                    <img src="img/Turbina_HX40.png" alt="Turbina HX40" class="produto_img" />
+                    <h3>Turbina HX40</h3>
+                    <button class="btn_abrir" data-target="popup2">Ver Detalhes</button>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto_card">
+                    <img src="img/Wastegate_Mecanica.png" alt="Wastegate Mecânica" class="produto_img" />
+                    <h3>Wastegate Mecânica</h3>
+                    <button class="btn_abrir" data-target="popup3">Ver Detalhes</button>
+                </div>
             </div>
-            <div class="card" onclick="abrirDetalhes()">  
-                <img src="img/Westgate.png" alt="Produto 2">
-                <h2>Westgate Mecânica</h2>
-                <p>Regulagem de pressao de turbos para carros, caminhões, barcos,aviões, motocicletas, etc</p>
-                <span class="preco">R$ 530,00 à vista</span>
-            </div>
-            <div class="card" onclick="abrirDetalhes()">
-                <img src="img/Pneu Hossier 29X10.5r15.png" alt="Produto 3">
-                <h2>Pneus Hossier 29</h2>
-                <p>Pneu de corrida Marca Hossier</p>
-                <span class="preco">R$ 8560,00 à vista</span>
-            </div>
+        </section>
+    </main>
+
+    <!-- Pop-ups -->
+    <div id="popup1" class="popup">
+        <div class="popup_conteudo">
+            <span class="fechar" data-close>&times;</span>
+            <h3>Pneu Hoosier 29X10.5 R15</h3>
+            <p>Desenvolvido para arrancadas, com excelente tração e desempenho em pista. Alta durabilidade sob uso intenso.</p>
         </div>
-     <!--RODAPÉ-->
-     <footer>
-        <img src="img/Logo.png" alt="NitroSpeed Performance Garage" class="logo_footer"/>
-        <p>Vendas: <a href="https://wa.me/5511991929394"><i class="fa fa-whatsapp"></i></a> (11) 99192-9394</p>
-        <p><a href="https://instagram.com/nitrospeedperformance"><i class="fa fa-instagram"></i></a> @NitroSpeed_Performance_Garage</p>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup_conteudo">
+            <span class="fechar" data-close>&times;</span>
+            <h3>Turbina HX40</h3>
+            <p>Turbocompressor de alto fluxo. Ideal para projetos que exigem performance e pressão consistente.</p>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup_conteudo">
+            <span class="fechar" data-close>&times;</span>
+            <h3>Wastegate Mecânica</h3>
+            <p>Controle de pressão de turbo com precisão. Compatível com diversas configurações de motores turbinados.</p>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <img src="img/Logo.png" alt="NitroSpeed Performance Garage" class="logo_footer" />
+        <p><a href="mailto:contato@nitrospeed.com">contato@nitrospeed.com</a></p>
+        <p>Vendas: <a href="https://wa.me/5511991929394"><i class="fa fa-whatsapp"></i> (11) 99192-9394</a></p>
+        <p><a href="https://instagram.com/nitrospeedperformance"><i class="fa fa-instagram"></i> @NitroSpeed_Performance_Garage</a></p>
     </footer>
+
+    <!-- JavaScript para pop-ups -->
+    <script>
+        document.querySelectorAll('.btn_abrir').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const popupId = btn.getAttribute('data-target');
+                document.getElementById(popupId).style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('[data-close]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.closest('.popup').style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('popup')) {
+                e.target.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

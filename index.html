@@ -1,76 +1,116 @@
-<html>
-    <head>
-        <link href="css/estilos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <meta charset="UTF-8"/>
-        <title>NitroSpeed Performance Garage</title>
-    </head>
-    <body>
-        <header>
-            <div class="divHeader">
-                <!--Logotipo-->
-                <img src="img/Logo.png" titlte="NitroSpeed Performance Garage" class="logo" />
-               
-                <!--MENU-->
-                <nav>
-                    <ul>
-                        <!--Itens do menu-->
-                        <li>    <Strong>HOME</Strong>    </li>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NitroSpeed Performance Garage</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos_index.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+    <div class="divHeader">
+        <!-- Logotipo -->
+        <img src="img/Logo.png" title="NitroSpeed Performance Garage" class="logo" />
 
+        <!-- Botão Menu Mobile -->
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <i class="fa fa-bars"></i>
+        </button>
 
+        <!-- Menu -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><strong>HOME</strong></a></li>
+                <li><a href="produtos.html"><strong>PRODUTOS</strong></a></li>
+                <li><a href="contato.html"><strong>CONTATO</strong></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-                        <li>    <strong><a href="produtos.html">PRODUTOS</a></strong>   </li>
+    <!-- Banner -->
+    <div class="banner"></div>
 
-
-
-                        <li>    <strong>CONTATO</strong>     </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>    
-        <div class="banner"> 
-        </div>
-        <!--Conteúdo da página web-->
-        <main>
-            <!--Quem Somos-->
-            <section class="quemsomos">
-                <h2 class="titulo_quemsomos">QUEM SOMOS</h2>
-                <img src="img/Quem_Somos.png" class="img_quemsomos"/>
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção: Quem Somos -->
+        <section class="quemsomos">
+            <h2 class="titulo_quemsomos">QUEM SOMOS</h2>
+            <div class="conteudo_quemsomos">
+                <img src="img/Logo.png" alt="Imagem da Equipe" class="img_quemsomos" />
                 <div class="textoQuemSomos">
-                <p>Na <b>NitroSpeed</b>, a paixão pela performance automotiva vai além das peças – entregamos potência de verdade! Começamos como uma loja especializada na comercialização de peças de performance, e agora expandimos nossos serviços para oferecer instalação profissional e calibração de motores, garantindo que cada peça atinja seu máximo potencial.
-                <p>Nosso objetivo é transformar carros comuns em máquinas de alta performance, unindo tecnologia, conhecimento e experiência.</p>
-                <p>Trabalhamos com as melhores marcas do mercado e contamos com uma equipe de especialistas prontos para proporcionar um ajuste fino e personalizado da sua máquina. Seja você um piloto de arrancada, entusiasta de track days ou alguém que busca mais potência e eficiência para o dia a dia, a <Strong>NitroSpeed</Strong> é o destino certo para levar seu carro ao extremo.</p>
-                <p>💨 <Strong>Aqui, vendemos performance, instalamos potência e ajustamos emoções!</Strong></p>
+                    <p>Na <strong>NitroSpeed</strong>, a paixão pela performance automotiva vai além das peças – entregamos potência de verdade! Começamos como uma loja especializada na comercialização de peças de performance, e agora expandimos nossos serviços para oferecer instalação profissional e calibração de motores, garantindo que cada peça atinja seu máximo potencial.</p>
+                    <p>Nosso objetivo é transformar carros comuns em máquinas de alta performance, unindo tecnologia, conhecimento e experiência.</p>
+                    <p>Trabalhamos com as melhores marcas do mercado e contamos com uma equipe de especialistas prontos para proporcionar um ajuste fino e personalizado da sua máquina. Seja você um piloto de arrancada, entusiasta de track days ou alguém que busca mais potência e eficiência para o dia a dia, a <strong>NitroSpeed</strong> é o destino certo para levar seu carro ao extremo.</p>
+                    <p>💨 <strong>Aqui, vendemos performance, instalamos potência e ajustamos emoções!</strong></p>
                 </div>
-            </section>
-            <!--Nossa Loja-->
-            <section class="nossaloja">
-                <h2 class="titulo_nossaloja">NOSSA LOJA</h2>
-                <div class="mapa">
-                    <p><b>O seu projeto é o NOSSO projeto. Clique no mapa e trace a rota para nos visitar.</b></p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5745786839457!2d-46.502364!3d-23.511828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce608f0994858d%3A0xcf4a5950d81294ff!2sToretto%20Drag%20Race!5e0!3m2!1spt-BR!2sbr!4v1740613324498!5m2!1spt-BR!2sbr" width="1065" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
-            <!--Nossos Produtos-->
-            <section class="nossosprodutos">    
-                <h2 class="titulo_nossosprodutos">PRODUTOS</h2>
-                <div>
-                    <ul class="lista_nossosprodutos">
-                        <li><b>Par de pneus Hossier 29X10.5 R15</b></li>
-                        <li><b>Turbina HX40</b></li>
-                        <li><b>Westgate Mecânica</b></li>
-                    </ul><img src="img/Pneu Hossier 29X10.5r15.png" class="img_nossosProdutos"/>
-                </div>
-                <div class="video">
-                    <iframe width="800" height="600" src="https://www.youtube.com/embed/YSDzP1iweeg" title="Vai começa a temporada 2025 da Área 43" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </section>
-        </main>
-        <!--RODAPÉ DA PAGINA-->
-        <footer>
-            <img src="img/Logo.png" alt="NitroSpeed Performance Garage" class="logo_footer"/>
-            <p>Vendas: <a href="https://wa.me/5511991929394"><i class="fa fa-whatsapp"> (11) 99192-9394</i></a></p>
-            <p><a href="https://instagram.com/nitrospeedperformance"><i class="fa fa-instagram"> @NitroSpeed_Performance_Garage</i></a></p>
-        </footer>
-    </body>
+            </div>
+        </section>
+
+        <!-- Seção: Nossa Loja -->
+        <section class="nossaloja">
+            <h2 class="titulo_nossaloja">NOSSA LOJA</h2>
+            <div class="mapa">
+                <p><strong>O seu projeto é o NOSSO projeto. Clique no mapa e trace a rota para nos visitar.</strong></p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5745786839457!2d-46.502364!3d-23.511828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce608f0994858d%3A0xcf4a5950d81294ff!2sToretto%20Drag%20Race!5e0!3m2!1spt-BR!2sbr!4v1740613324498!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Seção: Destaque de Produtos -->
+        <section class="nossosprodutos">
+            <h2 class="titulo_nossosprodutos">PRODUTOS</h2>
+            <div class="produtos_apresentacao">
+                <ul class="lista_nossosprodutos">
+                    <li><strong>Par de pneus Hoosier 29X10.5 R15</strong></li>
+                    <li><strong>Turbina HX40</strong></li>
+                    <li><strong>Wastegate Mecânica</strong></li>
+                </ul>
+                <img src="img/Pneu Hossier 29X10.5r15.png" alt="Pneu Hoosier" class="img_nossosprodutos" />
+            </div>
+
+            <div class="video">
+                <iframe 
+                    width="800" 
+                    height="600" 
+                    src="https://www.youtube.com/embed/YSDzP1iweeg" 
+                    title="Vai começar a temporada 2025 da Área 43" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <img src="img/Logo.png" alt="NitroSpeed Performance Garage" class="logo_footer" />
+        <p>Vendas: <a href="https://wa.me/5511991929394"><i class="fa fa-whatsapp"></i> (11) 99192-9394</a></p>
+        <p><a href="https://instagram.com/nitrospeedperformance"><i class="fa fa-instagram"></i> @NitroSpeed_Performance_Garage</a></p>
+    </footer>
+
+    <!-- Script para menu mobile -->
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('nav ul.menu');
+
+      menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+      });
+    </script>
+</body>
 </html>
